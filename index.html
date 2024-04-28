@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="sub-nav1">My Portfolio</div>
+            <div class="sub-nav2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="home-section">
+            <div class="content">
+                <div>Hi, My name is <span class="name">Rahul</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="aside">
+                <img src="bg.png" width="100%" alt="photo">
+            </div>
+        </div>
+    </main>
+    <section class="work">
+        <hr>
+        <div class="header">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['UI/UX Designer','Full Stack Develper', 'Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
